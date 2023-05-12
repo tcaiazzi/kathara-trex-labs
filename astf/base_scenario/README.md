@@ -19,7 +19,7 @@ The `lab` folder contains all the files needed by Kathará to run the emulation:
 - `*.startup` files contain the commands executed at devices startup.
 - The folders with devices' names contains file and configurations that are copied (in the same paths) into devices at startup (e.g., trex configurations). 
 
-## Running the Scenario
+## Running the Scenario 
 To run the example you only need to enter the lab folder, starting Kathará: 
 ```shell
 cd lab
