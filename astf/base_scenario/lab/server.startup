@@ -1,0 +1,7 @@
+ip addr add 30.0.0.2/24 dev eth0
+
+ip route add 16.0.0.0/24 via 30.0.0.1
+
+./t-rex-64 --astf -i
+
+python3 /start_trex_server.py
