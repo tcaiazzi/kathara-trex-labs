@@ -11,7 +11,7 @@ In the following you can find some links to useful resources:
 - [TRex Official Website](https://trex-tgn.cisco.com/)
 - [TRex Repository](https://github.com/cisco-system-traffic-generator/trex-core)
 
-## Pre-requisites (5 minutes instructions)
+## Pre-Requisites (5 minutes instructions)
 
 1. To run the network scenarios you need to install the Kathará network emulator (support for all the OSes). 
 You can follow the official [installation guide](https://github.com/KatharaFramework/Kathara/wiki/Installation-Guides).
