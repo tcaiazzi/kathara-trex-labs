@@ -22,7 +22,7 @@ docker build -t kathara/trex dockerfile/
 
 ## Advanced Stateful Network Scenarios
 The `astf` directory contains network scenarios that use the [TRex ASTF API](https://trex-tgn.cisco.com/trex/doc/cp_astf_docs/api/index.html):
-- `base_scenario`: a simple network scenario composed by three devices. It deploys a TRex server on a node and 
+- [base_scenario](astf/base_scenario): a simple network scenario composed by three devices. It deploys a TRex server on a node and 
 a TRex client on another, using the interactive API to generate http traffic between them. 
 
 
