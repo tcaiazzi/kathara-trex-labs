@@ -28,5 +28,5 @@ a TRex client on another, using the interactive API to generate http traffic bet
 - [simple_fat_tree](astf/simple_fat_tree): a network scenario to test the data-plane of a simple fat-tree data center composed of two pods and ten switches. The fat-tree uses a BGP control-plane implemented using FRRouting to exchange routes among nodes.
 
 ## Kathará Labs
-If you liked Kathará, you can find more Kathará labs that span several network scenarios on the official [Kathará-Labs](https://github.com/KatharaFramework/Kathara-Labs)
+If you liked Kathará, you can find more resources that span several network scenarios and technologies on the official [Kathará-Labs](https://github.com/KatharaFramework/Kathara-Labs)
 repository.
