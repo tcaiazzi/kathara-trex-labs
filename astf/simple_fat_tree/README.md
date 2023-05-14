@@ -21,6 +21,16 @@ configured with the proper routes (see `*.startup` files for details):
 - `leaf_2_0_1` announces the TRex client's network `16.0.0.0/24` in BGP; 
 - `leaf_2_0_1` is connected to the TRex client using a static route.  
 
+## Windows Users
+Currently, WSL 2 does not support Multi-Path. If you are running Docker with WSL 2 backend you 
+need to **set the Hyper-V Docker backend** to run the lab. 
+To do so:
+1. Open Docker Desktop and go to Settings (cog in the top-right corner);
+2. Unselect the “Use the WSL 2 based engine” checkbox
+3. Click “Apply & restart” 
+
+Alternatively, you can create a VM running a Linux distribution. 
+
 ## Network Scenario Configuration
 The `lab` folder contains all the files needed by Kathará to run the emulation:
 - `lab.conf` contains the network topology configuration. You can find more details on it on the [man-pages](https://www.kathara.org/man-pages/kathara-lab.conf.5.html).
@@ -86,3 +96,7 @@ You can also save the pcap into the `shared` directory in the `lab` to access it
 tcpdump -i eth2 -w /shared/leaf_1_0_1.pcap 
 ```
 You can now open the `.pcap` file on your host (e.g., using [Wireshark](https://www.wireshark.org/)) to inspect the exchanged traffic.
+
+## Kathará Labs
+If you liked Kathará, you can find more Kathará labs that span several network scenarios on the official [Kathará-Labs](https://github.com/KatharaFramework/Kathara-Labs)
+repository.

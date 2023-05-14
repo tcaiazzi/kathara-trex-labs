@@ -80,3 +80,7 @@ You can also save the pcap into the `shared` directory in the `lab` to access it
 tcpdump -i eth0 -w /shared/router.pcap 
 ```
 You can now open the `.pcap` file on your host (e.g., using [Wireshark](https://www.wireshark.org/)) to inspect the exchanged traffic. 
+
+## Kathará Labs
+If you liked Kathará, you can find more Kathará labs that span several network scenarios on the official [Kathará-Labs](https://github.com/KatharaFramework/Kathara-Labs)
+repository.
