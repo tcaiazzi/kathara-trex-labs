@@ -25,4 +25,6 @@ The `astf` directory contains network scenarios that use the [TRex ASTF API](htt
 - [base_scenario](astf/base_scenario): a simple network scenario composed by three devices. It deploys a TRex server on a node and 
 a TRex client on another, using the interactive API to generate http traffic between them. 
 
+- [simple_fat_tree](astf/simple_fat_tree): a network scenario to test the data-plane of a simple fat-tree data center composed of two pods and ten switches. The fat-tree uses a BGP control-plane implemented using FRRouting to exchange routes among nodes.
+
 
