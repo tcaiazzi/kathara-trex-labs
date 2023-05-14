@@ -1,0 +1,5 @@
+ifconfig eth0 20.0.0.1/24 up
+
+ip route add 48.0.0.0/16 via 20.0.0.2
+
+./t-rex-64 -i --astf

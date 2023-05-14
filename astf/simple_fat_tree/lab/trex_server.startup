@@ -1,0 +1,6 @@
+ifconfig eth0 200.0.0.2/24 up
+ifconfig lo:1 192.168.0.2/32 up
+ip route add 16.0.0.0/24 via 200.0.0.1
+
+./t-rex-64 -i --astf
+#/etc/init.d/apache2 start

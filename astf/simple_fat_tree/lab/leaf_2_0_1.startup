@@ -1,0 +1,9 @@
+ifconfig eth0 10.0.0.33/30 up
+ifconfig eth1 10.0.0.37/30 up
+ifconfig eth2 200.0.2.1/24 up
+ifconfig lo 192.168.0.7/32 up
+
+ifconfig eth3 20.0.0.2/24 up
+ip route add 16.0.0.0/24 via 20.0.0.1
+
+/etc/init.d/frr start
