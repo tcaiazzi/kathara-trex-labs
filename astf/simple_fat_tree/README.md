@@ -45,6 +45,9 @@ sudo kathara lstart --privileged
 ```
 **N.B.**: `--privileged` is required by the TRex Docker container to work properly.  
 
+Now, you have a running fat-tree! You can log inside devices (e.g., `kathara connect <device-name>)` to inspect routing tables and control-planes. Since `leaf_2_0_1` announces the client route `16.0.0.0/24`
+in BGP, you should see it in the routers' data-plane. Moreover, you should see the server's route `48.0.0.0/16` injected by `leaf_1_0_1` in BGP. 
+
 The startup commands of both client and server specifies to start the trex server process (`./t-rex-64 --astf -i`).  
 So, you can log into the server and directly run the trex script to load the traffic profile and
 to wait for the client requests. To do so, open a new terminal and type:
@@ -96,6 +99,11 @@ You can also save the pcap into the `shared` directory in the `lab` to access it
 tcpdump -i eth2 -w /shared/leaf_1_0_1.pcap 
 ```
 You can now open the `.pcap` file on your host (e.g., using [Wireshark](https://www.wireshark.org/)) to inspect the exchanged traffic.
+
+When you finish to experiment, you can undeploy the network scenario by typing the following command in the lab directory:
+```shell
+kathara lclean
+```
 
 ## Kathará Labs
 If you liked Kathará, you can find more Kathará labs that span several network scenarios on the official [Kathará-Labs](https://github.com/KatharaFramework/Kathara-Labs)
