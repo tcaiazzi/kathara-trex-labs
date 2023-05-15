@@ -81,6 +81,11 @@ tcpdump -i eth0 -w /shared/router.pcap
 ```
 You can now open the `.pcap` file on your host (e.g., using [Wireshark](https://www.wireshark.org/)) to inspect the exchanged traffic. 
 
+When you finish to experiment, you can undeploy the network scenario by typing the following command in the `lab` directory:
+```shell
+kathara lclean
+```
+
 ## Kathará Labs
 If you liked Kathará, you can find more Kathará labs that span several network scenarios on the official [Kathará-Labs](https://github.com/KatharaFramework/Kathara-Labs)
 repository.
