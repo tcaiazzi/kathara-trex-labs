@@ -7,7 +7,7 @@ You can start from this to deploy more complex custom scenarios.
 This is the network topology:
 ![topology.png](topology.png)
 
-The server node run the TRex server, while the client node run the TRex client. 
+The server node runs the TRex server, while the client node runs the TRex client. 
 
 The goal is to generate `http` traffic between the nodes. 
 To do so we use the [http_simple.py](https://github.com/cisco-system-traffic-generator/trex-core/blob/master/scripts/astf/http_simple.py) example profile.
